@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 40.33%;
+    padding: 5px;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#search {
+     background: red;
+    color: #fff;
+    font-family: Sans-serif;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    line-height: 60px;
+    margin: 25px 25px;
+    text-align: center;
+    border: 0;
+    margin-left:550px;
+}
+
+
+    </style>
+    <meta charset="UTF-8" >
+    <title>OUTPUT</title>
+
+    <script type="text/javascript">
+	window.history.forward();
+	function noBack(){ window.history.forward(); }
+</script>
+
+
+
+
+</head>
+
+<body background=""
+      style="background-repeat:no-repeat;background-size:350% 150%;" onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+<form action="/logout" method="POST">
+<div class="row">
+    <br>
+    <div class="column">
+        <h3 style="color:red;text-align:center;font-size:25px;margin-left:100px;">Analysis Graph</h3>
+      <img src="http://localhost:63342/Test/src/static/images/graph.jpg" alt="not found" style="width:100%;margin-left:50px;"/>
+
+  </div>
+</div>
+
+   <a href=" http://127.0.0.1:5000/logout"><button type="button" id="search">Logout</button></a>
+    </form>
+</body>
+
+</html>

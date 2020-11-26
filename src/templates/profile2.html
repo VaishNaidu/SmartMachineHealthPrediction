@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+	<style>
+		div{
+		    background-color: #4171B6;
+		    color: white;
+            font-size:400%;
+            align:top;
+		    text-align:center;
+		    padding: 0px 0px 0px 0px;
+		}
+		body{
+		background-color:#F0F0F0;
+		}
+
+		#search {
+     background: red;
+    color: #fff;
+    font-family: Sans-serif;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    line-height: 60px;
+    margin: 25px 25px;
+    text-align: center;
+    border: 0;
+    margin-left:550px;
+}
+
+
+	</style>
+
+
+     <script type="text/javascript">
+	window.history.forward();
+	function noBack(){ window.history.forward(); }
+</script>
+
+</head>
+<div>SMART MACHINE FOR DIAGNOSIS</div>
+<br>
+
+       <h1>{{ output }} Diagnosis Report </h1>
+       <table>
+
+           <tr>
+               <th><h2>ATTRIBUTES</h2></th>
+               <th><h2>DETAILS</h2></th>
+           </tr>
+           <tr>
+               <td><h4>NAME</h4></td>
+               <td><h4>&emsp;{{ output }}</h4></td>
+           </tr>
+           <tr>
+               <td><h4>EMAIL</h4></td>
+               <td><h4>&emsp;{{ name }}</h4></td>
+           </tr>
+                <tr>
+               <td><h4>PATIENT ID</h4></td>
+               <td><h4>&emsp;{{ id }}</h4></td>
+           </tr>
+
+       </table>
+       <hr>
+       <h3>{{ output }} may have {{disease}} </h3>
+             <hr>
+       <h3> We Believe in Health is Wealth!! Please Consult a doctor from {{hospital}} for a better treatment </h3>
+
+             <hr>
+       <h3>              <hr>
+       <h3>  <a href=" http://127.0.0.1:5000/logout"><button type="button" id="search">Logout</button></a></h3>
+
+
+
+
+
+{% endblock %}

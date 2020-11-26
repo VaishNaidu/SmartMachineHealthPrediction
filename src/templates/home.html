@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #222;}
+#main {margin-left: 120px}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="{{ url_for('static', filename='images/health.jpg') }}" style="width:100%">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>ABOUT US</p>
+  </a>
+  <a href="http://127.0.0.1:5000/login" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>PATIENT LOGIN</p>
+  </a>
+
+
+
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>HOSPITALS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT US</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT US</a>
+    <a href="http://127.0.0.1:5000/login" class="w3-bar-item w3-button" style="width:25% !important">PATIENT LOGIN</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">HOSPITALS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT US</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">HEALTH</span> PREDICTION.</h1>
+    <p>Knowing it exists is not enough.</p>
+    <img src="{{ url_for('static', filename='images/slider11.jpg') }}"  class="w3-image" width="992" height="1108">
+  </header>
+ </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">ABOUT US</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Our application is an end user support and an online consultation. Here, we allow users to get instant guidance on their cancer disease through an intelligent online system. This application is fed with various details and the  disease or cancer that is associated it. The application allows user to share their health related symptoms for thier health prediction. It then processes user specific details to check for various illness that could be associated with it.
+<BR>We also believe that knowing the problem is not enough.Thus,we operate and manage all our hospitals, which we believe, provides us with greater control over our facilities, and helps us in our endeavor to deliver high quality and affordable healthcare services.   </p>
+
+  <!-- End About Section -->
+  </div>
+
+  <!-- Portfolio Section -->
+
+<div class="w3-padding-64 w3-content" id="photos" style="margin-top:250px">
+    <h2 class="w3-text-light-grey">Our Hospitals</h2>
+    <hr style="width:200px" class="w3-opacity">
+  </div>
+
+ <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:30px;margin-left:100px">
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+       <img src="{{ url_for('static', filename='images/omega.jpg') }}"style="width:100%;height:20%">
+      <h3>Omega Hospitals</h3>
+      <p>Address:MLA Colony,
+Road No - 12, Banjara Hills,Hyderabad,
+Telangana 500034.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="{{ url_for('static', filename='images/kims.jpg') }}"style="width:100%;height:20%">
+      <h3>KIMS hospital</h3>
+      <p>Address: 1-8-31/1, Minister Road, Krishna Nagar Colony, Begumpet, Secunderabad, Telangana 500003.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="{{ url_for('static', filename='images/apollo.jpg') }}"style="width:100%;height:20%">
+      <h3>Apollo Hospitals</h3>
+      <p>Address:St. John's road, Secunderabad.
+Landmark: Adjacent to Keyes High School,
+TS India.</p>
+
+    </div>
+    <div class="w3-quarter">
+      <img src="{{ url_for('static', filename='images/indus.jpg') }}"style="width:100%;height:20%">
+      <h3>Indus Hospitals</h3>
+      <p>Address:Veni Nagar Colony, Kothapet, Sri Sai Shivani Complex, HUDA Complex, Saroornagar, Hyderabad, Telangana 500035.</p>
+    </div>
+  </div>
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Us</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> HiTech City,Hyderabad</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 9898989898</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: healthprediction@gmail.com</p>
+    </div><br>
+
+  <!-- End Contact Section -->
+  </div>
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.healthcare.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">healthcare.com</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>

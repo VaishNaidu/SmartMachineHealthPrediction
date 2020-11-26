@@ -1,0 +1,165 @@
+
+
+
+  div.watermark {
+  width: 3000px;
+  height: 3000px;
+  align-content: right;
+  display:block;
+  position: relative;
+}
+
+body::after {
+  content: "";
+ background:url(../Images/UltraLargeLogo.png);
+ background-repeat: no-repeat;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  align-content: right;
+  z-index: -1;
+}
+
+.tables{
+
+	padding: 20px 20px 20px 20px;
+}
+
+.login{
+	background-color: #2eb82e; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: sans-serif;
+
+
+
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+.login:hover{
+	background-color: white;
+    border: none;
+    color: #2eb82e; /* Green */
+    padding: 12px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: sans-serif;
+
+    transform: scale(1.1);
+
+
+
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+
+.login:active{
+   background-color: #2eb82e; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: sans-serif;
+
+    transform: scale(0.9);
+
+}
+
+.register{
+	background-color: #ff4d4d; /*navy blue*/
+    border: none;
+    color: white;
+    padding: 12px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: sans-serif;
+
+
+
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.register:hover{
+	background-color: white; /*light red*/
+
+
+    border: none;
+    color: #ff4d4d;
+    padding: 12px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: sans-serif;
+
+    transform: scale(1.1);
+
+
+
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+
+}
+.register:active{
+    background-color: #ff4d4d; /*navy blue*/
+    border: none;
+    color: white;
+    padding: 12px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: sans-serif;
+
+    transform: scale(0.9);
+
+
+
+}
+
+tr{
+	font-family:sans-serif;
+}
+tr:hover{
+	color:orange;
+
+}
+
+input{
+	}
+.inputBox{
+
+
+    color: black;
+    padding: 12px 19px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: sans-serif;
+}

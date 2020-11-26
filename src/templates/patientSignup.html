@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" media="screen" href ="static/bootstrap.min.css">
+       <link rel="stylesheet" href="static/bootstrap-theme.min.css">
+  <title></title>
+  <!-- CORE CSS-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+<style type="text/css">
+html,
+body {
+height:100%;
+width:26%;
+}
+html {
+    display: table;
+    margin: auto;
+ -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.margin {
+  margin: 0 !important;
+}
+
+</style>
+</head>
+<body background="{{ url_for('static', filename='images/clg1.jpg') }}" style=" background-size: cover;">
+  <div id="login-page" class="row" >
+    <div class="col s12 z-depth-6 card-panel" style="margin-left:10px;">
+     	<form action="/auth/register" method="POST" >
+        <div class="row">
+          <div class="input-field col s12 center">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="" class="responsive-img valign profile-image-login">
+			<h4 class="center login-form-text" style="color:red">Signup</h4>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="username" type="text" class="validate" name="username">
+            <label for="username" class="center-align" hint="Username"></label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-communication-email prefix"></i>
+            <input id="email" type="email" class="validate" name="email">
+            <label for="email" class="center-align" hint="Email"></label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password" type="password" class="validate" hint="Password" name="password">
+
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password-again" type="password" name="password-again">
+            <label for="password-again">Re-type password</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input class="btn waves-effect waves-light col s12" type="submit" value="Register Now">
+          </div>
+          <div class="input-field col s12">
+            <p class="margin center medium-small sign-up">Already have an account? <a href="http://127.0.0.1:5000/">Login</a></p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
